@@ -14,7 +14,9 @@ test("renders the contact form header", () => {
   expect(header).toHaveTextContent(/Contact Form/i)
 })
 
-test("renders ONE error message if user enters less then 5 characters into firstname.", async () => {})
+test("renders ONE error message if user enters less then 5 characters into firstname.", async () => {
+  render(<ContactForm />)
+})
 
 test("renders THREE error messages if user enters no values into any fields.", async () => {})
 
